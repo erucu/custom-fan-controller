@@ -85,7 +85,7 @@ class DialView @JvmOverloads constructor(
         super.onDraw(canvas)
 
         // Set dial background color to green if selection not off.
-//        paint.color = if (fanSpeed == FanSpeed.OFF) Color.GRAY else Color.GREEN
+        paint.color = if (fanSpeed == FanSpeed.OFF) Color.GRAY else Color.GREEN
 
         paint.color = when (fanSpeed) {
             FanSpeed.OFF -> Color.GRAY
